@@ -44,6 +44,7 @@ app.post('/submit-form', async (req, res) => {
     }
 });
 
+
 app.get('/get-grades', async (req, res) => {
     try {
         const grades = await Grades.find({}, { _id: 0, __v: 0 }).exec();
